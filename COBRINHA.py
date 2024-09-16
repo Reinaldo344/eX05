@@ -52,3 +52,42 @@ def desenhar_cibrinha(cobra):
                  #caotura as teclas para mover a cobrinha 
                  if avento.type == pygame.KEYDOWN:
                     if evento.key == pygame.k_LEFT and x_ velocidade == 0;          
+                        k_velocidade = tanmaho_celula
+                        y_velocidade = 0
+                     elif evento.key == pygame.k_RIGHT ant d y_velocidade == 0
+                       x_velocidade = -tanmaho tamanho_celula
+                       y_velocidade= 0
+                       elif evento.key == pygama.k_UP and y_velo
+                            y_velocidade = -tamanho_celula
+                            x_velocideda - 0 
+                        elif evento.key == pygame.k_DOWN and y_velocidade == 0
+                            y_velocideda - tamanho_celula
+                            x_velocida = 0
+        # ataliza a posição da cobrinha 
+        x += x_velocidade
+        y += y_velocidade
+        cordra.append((x, y))
+
+        # detecta se a cobrinha comeu a comida
+        if len((cordra)) > comrimento_cordra:
+           del cobra[0]
+
+         # detecta colisão com as bordas ou com o próprio corpo 
+         if x == x_comida = >= largura or y < 0 or >= altura or (x, y) in corbra[:-1]:
+            break
+            
+        # detecta se acobirnha comeu a comida
+        if x == x_comida and y == y_comida
+            coprimeto_cobra += 1
+            x_comida, y_comida = gerar_comida
+
+        # atualiza a tela 
+        tela.fill(preta)
+        desenhar_cobirnha(corbra)
+        pygame.draw.rect(rela, vermelho, (x_comida; tamanho_celula, tamanho_celula)
+        pygame.displa.flip()
+
+        relogio.tick(velocidade)
+
+        # inicin o jogo 
+jogo()
